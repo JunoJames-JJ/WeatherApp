@@ -2,7 +2,7 @@
 //  WeatherService.swift
 //  WeatherApp
 //
-//  Created by Jobin Joseph on 2024-10-28.
+//  Created by Juno James on 2024-10-28.
 //
 
 import Foundation
