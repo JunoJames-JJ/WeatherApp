@@ -28,6 +28,14 @@
 		E02A38192CD0305700518B8E /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A38182CD0305700518B8E /* LocationView.swift */; };
 		E02A381B2CD0309E00518B8E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A381A2CD0309E00518B8E /* SearchBar.swift */; };
 		E02A381D2CD030D200518B8E /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A381C2CD030D200518B8E /* ErrorMessage.swift */; };
+		E02A38202CD031DA00518B8E /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A381F2CD031DA00518B8E /* CurrentView.swift */; };
+		E02A38222CD0320C00518B8E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A38212CD0320C00518B8E /* LoadingView.swift */; };
+		E02A38242CD0323C00518B8E /* WeatherDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A38232CD0323C00518B8E /* WeatherDetailsView.swift */; };
+		E02A38262CD0329000518B8E /* CurrentTemperatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A38252CD0329000518B8E /* CurrentTemperatureView.swift */; };
+		E02A38282CD032C900518B8E /* WeatherIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A38272CD032C900518B8E /* WeatherIconView.swift */; };
+		E02A382A2CD032FE00518B8E /* WeatherDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A38292CD032FE00518B8E /* WeatherDescriptionView.swift */; };
+		E02A382C2CD0334F00518B8E /* FeelsLikeTemperatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A382B2CD0334F00518B8E /* FeelsLikeTemperatureView.swift */; };
+		E02A382E2CD0337B00518B8E /* HumidityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A382D2CD0337B00518B8E /* HumidityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +80,14 @@
 		E02A38182CD0305700518B8E /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		E02A381A2CD0309E00518B8E /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		E02A381C2CD030D200518B8E /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		E02A381F2CD031DA00518B8E /* CurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
+		E02A38212CD0320C00518B8E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E02A38232CD0323C00518B8E /* WeatherDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsView.swift; sourceTree = "<group>"; };
+		E02A38252CD0329000518B8E /* CurrentTemperatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTemperatureView.swift; sourceTree = "<group>"; };
+		E02A38272CD032C900518B8E /* WeatherIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIconView.swift; sourceTree = "<group>"; };
+		E02A38292CD032FE00518B8E /* WeatherDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDescriptionView.swift; sourceTree = "<group>"; };
+		E02A382B2CD0334F00518B8E /* FeelsLikeTemperatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelsLikeTemperatureView.swift; sourceTree = "<group>"; };
+		E02A382D2CD0337B00518B8E /* HumidityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +218,15 @@
 			isa = PBXGroup;
 			children = (
 				E02A37D62CD0224100518B8E /* ContentView.swift */,
+				E02A381F2CD031DA00518B8E /* CurrentView.swift */,
 				E02A38182CD0305700518B8E /* LocationView.swift */,
+				E02A38232CD0323C00518B8E /* WeatherDetailsView.swift */,
+				E02A38252CD0329000518B8E /* CurrentTemperatureView.swift */,
+				E02A38272CD032C900518B8E /* WeatherIconView.swift */,
+				E02A38292CD032FE00518B8E /* WeatherDescriptionView.swift */,
+				E02A382B2CD0334F00518B8E /* FeelsLikeTemperatureView.swift */,
+				E02A382D2CD0337B00518B8E /* HumidityView.swift */,
+				E02A38212CD0320C00518B8E /* LoadingView.swift */,
 				E02A381A2CD0309E00518B8E /* SearchBar.swift */,
 				E02A381C2CD030D200518B8E /* ErrorMessage.swift */,
 			);
@@ -339,22 +363,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02A38282CD032C900518B8E /* WeatherIconView.swift in Sources */,
+				E02A38242CD0323C00518B8E /* WeatherDetailsView.swift in Sources */,
 				E02A38032CD024FC00518B8E /* MainWeather.swift in Sources */,
 				E02A38132CD02ED900518B8E /* LocationHelper.swift in Sources */,
 				E02A381B2CD0309E00518B8E /* SearchBar.swift in Sources */,
 				E02A380B2CD027C300518B8E /* GeoCodingService.swift in Sources */,
 				E02A38112CD02E0900518B8E /* LocationManager.swift in Sources */,
+				E02A382C2CD0334F00518B8E /* FeelsLikeTemperatureView.swift in Sources */,
 				E02A37D72CD0224100518B8E /* ContentView.swift in Sources */,
 				E02A37FF2CD024C900518B8E /* Weather.swift in Sources */,
 				E02A38012CD024DF00518B8E /* WeatherData.swift in Sources */,
+				E02A382A2CD032FE00518B8E /* WeatherDescriptionView.swift in Sources */,
 				E02A38152CD02F6700518B8E /* ConversionHelper.swift in Sources */,
 				E02A380E2CD02BFF00518B8E /* Localization.swift in Sources */,
 				E02A38172CD02FFA00518B8E /* LocationViewModel.swift in Sources */,
 				E02A38062CD0267900518B8E /* WeatherService.swift in Sources */,
 				E02A381D2CD030D200518B8E /* ErrorMessage.swift in Sources */,
 				E02A38192CD0305700518B8E /* LocationView.swift in Sources */,
+				E02A38202CD031DA00518B8E /* CurrentView.swift in Sources */,
 				E02A37D52CD0224100518B8E /* WeatherAppApp.swift in Sources */,
 				E02A38092CD0274000518B8E /* ModelData.swift in Sources */,
+				E02A382E2CD0337B00518B8E /* HumidityView.swift in Sources */,
+				E02A38222CD0320C00518B8E /* LoadingView.swift in Sources */,
+				E02A38262CD0329000518B8E /* CurrentTemperatureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
