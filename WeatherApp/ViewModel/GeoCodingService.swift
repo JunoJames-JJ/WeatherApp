@@ -30,7 +30,7 @@ class GeocodingService: GeocodingServiceProtocol {
 
             guard let placemark = placemarks?.first, let location = placemark.location else {
                 subject.send(completion: .failure(NSError(domain: self.domainError, code: 0,
-                                                          userInfo: [NSLocalizedDescriptionKey: "No valid location found."])))
+                                                          userInfo: [NSLocalizedDescriptionKey: Localization.validLocationNotFound])))
                 return
             }
 

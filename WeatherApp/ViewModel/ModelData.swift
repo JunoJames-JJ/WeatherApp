@@ -35,7 +35,7 @@ class ModelData: ObservableObject {
                 let decoder = JSONDecoder()
                 weathers = try decoder.decode(Weather.self, from: lastWeatherData)
             } catch {
-                print("Failed to load last weather data.")
+                print(Localization.loadLastWeatherError)
             }
         }
     }
@@ -51,7 +51,7 @@ class ModelData: ObservableObject {
     // Fetch weather for a given location name
     func fetchWeather(for locationName: String) {
         guard !locationName.isEmpty else {
-            showGeocodingError("Location name cannot be empty.")
+            showGeocodingError(Localization.emptyLocationError)
             weathers = nil
             return
         }
@@ -61,7 +61,7 @@ class ModelData: ObservableObject {
             .flatMap { [weak self] coordinate -> AnyPublisher<Weather, Error> in
                 guard let self = self else {
                     return Fail(error: NSError(domain: "ModelDataError", code: 0,
-                                               userInfo: [NSLocalizedDescriptionKey: "ModelData not available."]))
+                                               userInfo: [NSLocalizedDescriptionKey: Localization.modelDataNotAvailable]))
                     .eraseToAnyPublisher()
                 }
                 return self.loadWeatherData(latitude: coordinate.latitude, longitude: coordinate.longitude)
@@ -71,7 +71,7 @@ class ModelData: ObservableObject {
             .sink(receiveCompletion: { [weak self] completion in
                 self?.isLoading = false
                 if case .failure(_) = completion {
-                    self?.showError("Failed to fetch weather data.")
+                    self?.showError(Localization.dataFetchError)
                 }
             }, receiveValue: { [weak self] weatherData in
                 self?.weathers = weatherData
@@ -105,7 +105,7 @@ class ModelData: ObservableObject {
             let data = try encoder.encode(weatherData)
             UserDefaults.standard.set(data, forKey: lastWeatherDataKey)
         } catch {
-            print("Failed to save weather data.")
+            print(Localization.saveWeatherError)
         }
     }
 }
